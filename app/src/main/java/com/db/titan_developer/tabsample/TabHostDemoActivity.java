@@ -11,7 +11,7 @@ import android.widget.TabWidget;
 import android.widget.TextView;
 
 
-public class MainActivity extends ActionBarActivity {
+public class TabHostDemoActivity extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
