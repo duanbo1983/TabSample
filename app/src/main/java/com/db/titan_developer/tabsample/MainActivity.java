@@ -41,11 +41,12 @@ public class MainActivity extends ActionBarActivity {
         // Or create simple tabspec instances in any other way...
         for (int index = 0; index < originalTextViews.length; index++) {
             final TextView tabWidgetTextView = originalTextViews[index];
-            final View tabContentView = tabContent.getChildAt(index);
+            final TextView tabContentView = (TextView)tabContent.getChildAt(index);
             TabHost.TabSpec tabSpec = tabHost.newTabSpec((String) tabWidgetTextView.getTag());
             tabSpec.setContent(new TabHost.TabContentFactory() {
                 @Override
                 public View createTabContent(String tag) {
+                    tabContentView.setText("Hello " + tabWidgetTextView.getTag());
                     return tabContentView;
                 }
             });
