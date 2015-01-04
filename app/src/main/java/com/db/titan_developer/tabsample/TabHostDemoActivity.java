@@ -39,7 +39,7 @@ public class TabHostDemoActivity extends ActionBarActivity {
         }
 
         // Create the tabspec based on the textview childs in the xml file.
-        // Or create simple tabspec instances in any other way...
+        // Or create simple_layout tabspec instances in any other way...
         for (int index = 0; index < originalTextViews.length; index++) {
             final TextView tabWidgetTextView = originalTextViews[index];
             final TextView tabContentView = (TextView)tabContent.getChildAt(index);

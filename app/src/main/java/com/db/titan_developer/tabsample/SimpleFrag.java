@@ -13,7 +13,7 @@ public class SimpleFrag extends Fragment {
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
 		if(container == null)
 			return null;
-		return inflater.inflate(R.layout.simple, container, false);
+		return inflater.inflate(R.layout.simple_layout, container, false);
 	}
 	
 	
