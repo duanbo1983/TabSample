@@ -1,5 +1,6 @@
 package com.db.titan_developer.tabsample;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -77,7 +78,10 @@ public class TabHostDemoActivity extends ActionBarActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.action_fragment_tabs) {
+            Intent intent = new Intent();
+            intent.setClass(this, FragmentTabs.class);
+            startActivity(intent);
             return true;
         }
 
